@@ -1,0 +1,86 @@
+[
+  {
+    "input": "The dog eats the apple",
+    "triplet": {
+      "who": "dog",
+      "does": "eat",
+      "what": "apple"
+    }
+  },
+  {
+    "input": "The cat runs quickly",
+    "triplet": {
+      "who": "cat",
+      "does": "run",
+      "what": null,
+      "modifiers": ["quickly"]
+    }
+  },
+  {
+    "input": "She sings happily",
+    "triplet": {
+      "who": "she",
+      "does": "sing",
+      "what": null,
+      "modifiers": ["happily"]
+    }
+  },
+  {
+    "input": "The child plays in the yard",
+    "triplet": {
+      "who": "child",
+      "does": "play",
+      "what": "yard"
+    }
+  },
+  {
+    "input": "He reads a book",
+    "triplet": {
+      "who": "he",
+      "does": "read",
+      "what": "book"
+    }
+  },
+  {
+    "input": "They jump over the fence",
+    "triplet": {
+      "who": "they",
+      "does": "jump",
+      "what": "fence"
+    }
+  },
+  {
+    "input": "The student answers the question",
+    "triplet": {
+      "who": "student",
+      "does": "answer",
+      "what": "question"
+    }
+  },
+  {
+    "input": "We ran fast",
+    "triplet": {
+      "who": "we",
+      "does": "run",
+      "what": null,
+      "modifiers": ["fast"]
+    }
+  },
+  {
+    "input": "I eat pizza happily",
+    "triplet": {
+      "who": "i",
+      "does": "eat",
+      "what": "pizza",
+      "modifiers": ["happily"]
+    }
+  },
+  {
+    "input": "The teacher gave homework",
+    "triplet": {
+      "who": "teacher",
+      "does": "give",
+      "what": "homework"
+    }
+  }
+]
