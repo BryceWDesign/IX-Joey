@@ -1,0 +1,73 @@
+{
+  "sessions": [
+    {
+      "session_id": "session_0001",
+      "timestamp": "2025-06-19T17:01:00Z",
+      "input": "The dog ran quickly",
+      "triplet": {
+        "who": "dog",
+        "does": "run",
+        "what": null,
+        "modifiers": ["quickly"]
+      },
+      "response": "The dog ran quickly"
+    },
+    {
+      "session_id": "session_0002",
+      "timestamp": "2025-06-19T17:02:00Z",
+      "input": "A cat eats an apple",
+      "triplet": {
+        "who": "cat",
+        "does": "eat",
+        "what": "apple",
+        "modifiers": []
+      },
+      "response": "The cat eats an apple"
+    },
+    {
+      "session_id": "session_0003",
+      "timestamp": "2025-06-19T17:03:00Z",
+      "input": "She happily sings",
+      "triplet": {
+        "who": "she",
+        "does": "sing",
+        "what": null,
+        "modifiers": ["happily"]
+      },
+      "response": "She sings happily"
+    },
+    {
+      "session_id": "session_0004",
+      "timestamp": "2025-06-19T17:04:00Z",
+      "input": "The child gives the apple to the teacher",
+      "triplet": {
+        "who1": "child",
+        "does": "give",
+        "what": "apple",
+        "who2": "teacher"
+      },
+      "response": "The child gives the apple to the teacher"
+    },
+    {
+      "session_id": "session_0005",
+      "timestamp": "2025-06-19T17:05:00Z",
+      "input": "Eat the apple",
+      "triplet": {
+        "does": "eat",
+        "what": "apple"
+      },
+      "response": "Eating the apple"
+    },
+    {
+      "session_id": "session_0006",
+      "timestamp": "2025-06-19T17:06:00Z",
+      "input": "Who is the president?",
+      "triplet": {
+        "who": "unknown",
+        "does": "be",
+        "what": "president"
+      },
+      "response": "I do not know who the president is."
+    }
+  ]
+}
