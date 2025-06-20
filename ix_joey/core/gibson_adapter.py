@@ -1,28 +1,36 @@
 """
-IX-Joey: Gibson Adapter Module
+Gibson Adapter — IX-Joey
 
-This module enables Joey to send structured knowledge queries to IX-Gibson and receive
-expert responses routed through the hub. Only Joey has permission to initiate requests.
+Handles API communication between IX-Joey and IX-Gibson
+central intelligence node.
 """
 
 import requests
-import json
+from ix_gibson.config.gibson_config import GIBSON_API_URL, REQUEST_TIMEOUT_SECONDS, RETRY_ATTEMPTS, RETRY_BACKOFF_SECONDS
+import time
 
 class GibsonAdapter:
-    def __init__(self, gibson_url="http://localhost:8492/gibson"):
-        self.gibson_url = gibson_url
+    def __init__(self):
+        self.api_url = GIBSON_API_URL
+        self.timeout = REQUEST_TIMEOUT_SECONDS
+        self.retries = RETRY_ATTEMPTS
+        self.backoff = RETRY_BACKOFF_SECONDS
 
-    def send_query(self, domain: str, question: str) -> str:
-        payload = {
-            "domain": domain,
-            "question": question,
-            "from": "ix-joey"
-        }
-        try:
-            response = requests.post(self.gibson_url, json=payload, timeout=10)
-            if response.status_code == 200:
-                return response.json().get("answer", "[Gibson]: No response.")
-            else:
-                return f"[Gibson ERROR {response.status_code}]: {response.text}"
-        except Exception as e:
-            return f"[Gibson COMM ERROR]: {str(e)}"
+    def query_gibson(self, query_text: str) -> dict:
+        """
+        Sends a query to IX-Gibson and returns the response.
+
+        Args:
+            query_text (str): Text query to send.
+
+        Returns:
+            dict: Response data from IX-Gibson API.
+        """
+        for attempt in range(self.retries):
+            try:
+                response = requests.post(self.api_url, json={"query": query_text}, timeout=self.timeout)
+                response.raise_for_status()
+                return response.json()
+            except requests.RequestException as e:
+                time.sleep(self.backoff)
+        return {"error": "Failed to communicate with IX-Gibson after retries."}
