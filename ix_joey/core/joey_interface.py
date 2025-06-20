@@ -1,33 +1,24 @@
 """
-IX-Joey User Interface Module
+IX-Joey CLI Interface
 
-Handles user interaction, forwards input to JoeyCore, and returns responses.
-Updated to support the Gibson-aware JoeyCore for expert querying.
+Provides an interactive command-line interface for natural
+language queries routed through JoeyCore to IX-Gibson.
 """
 
-from joey_core import JoeyCore
+from core.joey_core import JoeyCore
 
-class JoeyInterface:
-    def __init__(self):
-        self.core = JoeyCore()
+def run_joey_cli():
+    core = JoeyCore()
+    print("IX-Joey — Natural Language Processor")
+    print("Type your input below. Type 'exit' to quit.\n")
 
-    def receive_input(self, user_text: str) -> str:
-        """
-        Receive user input, forward to core processing,
-        and return the generated response.
-        """
-        response = self.core.process_input(user_text)
-        return response
+    while True:
+        user_input = input("Joey> ").strip()
+        if user_input.lower() in ("exit", "quit"):
+            print("Exiting IX-Joey interface. Have a great day!")
+            break
+        output = core.interpret(user_input)
+        print(f"→ {output}")
 
-    def run(self):
-        """
-        Simple command line interface for demonstration.
-        """
-        print("IX-Joey is online. Type your questions.")
-        while True:
-            user_input = input("You: ")
-            if user_input.strip().lower() in ['exit', 'quit']:
-                print("IX-Joey shutting down. Goodbye!")
-                break
-            output = self.receive_input(user_input)
-            print(f"Joey: {output}")
+if __name__ == "__main__":
+    run_joey_cli()
