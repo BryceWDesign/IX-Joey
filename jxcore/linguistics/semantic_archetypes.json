@@ -1,0 +1,79 @@
+{
+  "action_basic": {
+    "pattern": ["who", "does", "what"],
+    "example": {
+      "input": "The dog eats food",
+      "output": {
+        "who": "dog",
+        "does": "eat",
+        "what": "food"
+      }
+    }
+  },
+  "action_with_modifier": {
+    "pattern": ["who", "does", "what", "modifiers"],
+    "example": {
+      "input": "The cat runs quickly",
+      "output": {
+        "who": "cat",
+        "does": "run",
+        "what": null,
+        "modifiers": ["quickly"]
+      }
+    }
+  },
+  "state_description": {
+    "pattern": ["who", "is", "what"],
+    "example": {
+      "input": "The dog is happy",
+      "output": {
+        "who": "dog",
+        "does": "be",
+        "what": "happy"
+      }
+    }
+  },
+  "double_actor": {
+    "pattern": ["who1", "does", "what", "to", "who2"],
+    "example": {
+      "input": "The child gives the apple to the teacher",
+      "output": {
+        "who1": "child",
+        "does": "give",
+        "what": "apple",
+        "who2": "teacher"
+      }
+    }
+  },
+  "command_simple": {
+    "pattern": ["verb", "object"],
+    "example": {
+      "input": "Eat the apple",
+      "output": {
+        "does": "eat",
+        "what": "apple"
+      }
+    }
+  },
+  "question_identity": {
+    "pattern": ["who", "is", "what"],
+    "example": {
+      "input": "Who is the president?",
+      "output": {
+        "who": "unknown",
+        "does": "be",
+        "what": "president"
+      }
+    }
+  },
+  "existential_check": {
+    "pattern": ["does", "what", "exist"],
+    "example": {
+      "input": "Does the unicorn exist?",
+      "output": {
+        "does": "exist",
+        "what": "unicorn"
+      }
+    }
+  }
+}
