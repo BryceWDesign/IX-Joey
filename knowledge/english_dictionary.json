@@ -1,0 +1,102 @@
+{
+  "joey": {
+    "part_of_speech": "proper noun",
+    "definition": "A name used to refer to the AI child language model being developed.",
+    "example": "Joey is learning how to understand English like a human child."
+  },
+  "apple": {
+    "part_of_speech": "noun",
+    "definition": "A round fruit with red, green, or yellow skin and a firm white flesh.",
+    "example": "She ate an apple for lunch."
+  },
+  "run": {
+    "part_of_speech": "verb",
+    "definition": "To move quickly on foot.",
+    "example": "The dog will run across the yard."
+  },
+  "dog": {
+    "part_of_speech": "noun",
+    "definition": "A domesticated carnivorous mammal with a barking or howling voice.",
+    "example": "The dog barked at the stranger."
+  },
+  "blue": {
+    "part_of_speech": "adjective",
+    "definition": "A color resembling that of the clear sky in daylight.",
+    "example": "She wore a blue dress."
+  },
+  "cat": {
+    "part_of_speech": "noun",
+    "definition": "A small domesticated carnivorous mammal with soft fur.",
+    "example": "The cat slept on the windowsill."
+  },
+  "eat": {
+    "part_of_speech": "verb",
+    "definition": "To consume food.",
+    "example": "They eat lunch at noon."
+  },
+  "quickly": {
+    "part_of_speech": "adverb",
+    "definition": "At a fast speed.",
+    "example": "He quickly answered the question."
+  },
+  "sky": {
+    "part_of_speech": "noun",
+    "definition": "The region of the atmosphere and outer space seen from Earth.",
+    "example": "The sky turned orange at sunset."
+  },
+  "happy": {
+    "part_of_speech": "adjective",
+    "definition": "Feeling or showing pleasure or contentment.",
+    "example": "She felt happy when she got the letter."
+  },
+  "the": {
+    "part_of_speech": "article",
+    "definition": "Used to refer to something specific that both the speaker and listener know.",
+    "example": "The apple on the table is red."
+  },
+  "I": {
+    "part_of_speech": "pronoun",
+    "definition": "Used by a speaker to refer to himself or herself.",
+    "example": "I am learning to write code."
+  },
+  "is": {
+    "part_of_speech": "verb",
+    "definition": "Third person singular present of 'be'.",
+    "example": "He is a good boy."
+  },
+  "an": {
+    "part_of_speech": "article",
+    "definition": "Used before words beginning with a vowel sound.",
+    "example": "She picked an apple."
+  },
+  "he": {
+    "part_of_speech": "pronoun",
+    "definition": "Used to refer to a male person or animal.",
+    "example": "He likes to run."
+  },
+  "she": {
+    "part_of_speech": "pronoun",
+    "definition": "Used to refer to a female person or animal.",
+    "example": "She is reading a book."
+  },
+  "on": {
+    "part_of_speech": "preposition",
+    "definition": "Physically in contact with and supported by a surface.",
+    "example": "The book is on the table."
+  },
+  "in": {
+    "part_of_speech": "preposition",
+    "definition": "Expressing the situation of something that is enclosed or surrounded.",
+    "example": "The ball is in the box."
+  },
+  "and": {
+    "part_of_speech": "conjunction",
+    "definition": "Used to connect words of the same part of speech, clauses, or sentences.",
+    "example": "She ate an apple and drank water."
+  },
+  "but": {
+    "part_of_speech": "conjunction",
+    "definition": "Used to introduce a phrase or clause contrasting with what has already been mentioned.",
+    "example": "He tried, but he failed."
+  }
+}
