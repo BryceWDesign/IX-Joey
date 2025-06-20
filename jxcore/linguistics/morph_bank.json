@@ -1,0 +1,82 @@
+{
+  "run": {
+    "type": "verb",
+    "meaning": "to move quickly on foot"
+  },
+  "eat": {
+    "type": "verb",
+    "meaning": "to consume food"
+  },
+  "dog": {
+    "type": "noun",
+    "meaning": "a domesticated animal that barks"
+  },
+  "cat": {
+    "type": "noun",
+    "meaning": "a small, independent feline animal"
+  },
+  "apple": {
+    "type": "noun",
+    "meaning": "a sweet, edible fruit"
+  },
+  "tree": {
+    "type": "noun",
+    "meaning": "a tall plant with a trunk and branches"
+  },
+  "jump": {
+    "type": "verb",
+    "meaning": "to propel oneself upward off the ground"
+  },
+  "talk": {
+    "type": "verb",
+    "meaning": "to speak or communicate verbally"
+  },
+  "read": {
+    "type": "verb",
+    "meaning": "to interpret written symbols as language"
+  },
+  "play": {
+    "type": "verb",
+    "meaning": "to engage in activity for enjoyment"
+  },
+  "sing": {
+    "type": "verb",
+    "meaning": "to produce musical sounds with the voice"
+  },
+  "think": {
+    "type": "verb",
+    "meaning": "to use the mind to form ideas or opinions"
+  },
+  "quick": {
+    "type": "adverb",
+    "meaning": "at a high speed"
+  },
+  "happy": {
+    "type": "adverb",
+    "meaning": "in a joyful manner"
+  },
+  "sad": {
+    "type": "adverb",
+    "meaning": "in a sorrowful manner"
+  },
+  "child": {
+    "type": "noun",
+    "meaning": "a young human being"
+  },
+  "mouse": {
+    "type": "noun",
+    "meaning": "a small rodent"
+  },
+  "blue": {
+    "type": "adjective",
+    "meaning": "having the color of the sky or ocean"
+  },
+  "green": {
+    "type": "adjective",
+    "meaning": "having the color of grass or leaves"
+  },
+  "fast": {
+    "type": "adverb",
+    "meaning": "quickly and with speed"
+  }
+}
